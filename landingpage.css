@@ -1,0 +1,54 @@
+/* Apply background color */
+body {
+    background-color: #CEEFEC;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clgname p{
+    font-family: 'Lato';
+    font-weight:bold;
+    font-size:x-large;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.sdmlogo img{
+    width: 60px;
+    
+}
+.dvh img{
+    width: 60px;
+}
+nav{
+    padding-top: 1rem;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+li a {
+    text-decoration: none;
+    color:black; 
+    padding: 10px;
+   font-size:x-large;
+   font-family: 'Lato';
+   font-weight: 500;
+    
+}
+
+li a:hover {
+    color: #007BFF; 
+}
+
+
+
+
