@@ -43,9 +43,15 @@ header {
 /* Sun image size */
 .sun img {
     width: 400px;
-    height: 300px;
+    height: 191px;
 }
-
+.fixed-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
 /* Navigation bar styling */
 nav {
     position: absolute;
@@ -90,6 +96,9 @@ li a:hover {
 .desert {
     margin: 0;
     padding: 0;
+    position:relative;
+    z-index: 3;
+
 }
 
 /* Desert image styling */
@@ -97,6 +106,7 @@ li a:hover {
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 250px;
 }
 
 /* Title 'insignia' styling */
@@ -108,4 +118,85 @@ li a:hover {
     font-size: 120px;
     letter-spacing: 1px;
 }
-
+@media(max-width: 750px){
+    .clgname p{
+        font-size:10px;
+    }
+    .dvh img, .sdmlogo img{
+        width: 40px;
+        height: 40px;
+    }
+    nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        padding: 0.8rem 1.2rem;
+        width: 90%; /* Increased width */
+        box-sizing: border-box;
+        margin-top: 30px;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem; /* uniform gap between items */
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Lato';
+        font-size: 13px;
+        font-weight: 500;
+        padding: 0.5rem 0.8rem;
+        border-radius: 8px;
+        transition: background 0.3s;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .title p {
+        margin-top: 60px;
+        margin-bottom: 0;
+        font-family: 'Samarkan';
+        text-align: center;
+        font-size: 100px;
+        letter-spacing: 1px;
+        margin-top: 230px;
+    }
+    .sun img{
+        width: 106px;
+    height: 150px;
+    margin-top: 105px;
+        
+    }
+    .desert {
+        position: relative;
+        z-index: 3;
+    }
+    .desert img {
+        margin-top: 500px; /* Pull up to overlap on mobile too */
+        height: 400px;
+        width: 100%;
+        display: block;
+    }
+    
+    
+    
+    
+}
