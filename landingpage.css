@@ -1,54 +1,109 @@
-/* Apply background color */
+/* Set body background color and remove default margin/padding */
 body {
     background-color: #CEEFEC;
     margin: 0;
     padding: 0;
 }
-header{
+
+/* Header styling: Align logo, name, and dvh in a row */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.clgname p{
+
+/* College name styling */
+.clgname p {
     font-family: 'Lato';
-    font-weight:bold;
-    font-size:x-large;
+    font-weight: bold;
+    font-size: large;
     letter-spacing: 2px;
     text-align: center;
 }
-.sdmlogo img{
+
+/* Logo sizing */
+.sdmlogo img,
+.dvh img {
     width: 60px;
-    
 }
-.dvh img{
-    width: 60px;
+
+/* Hero section with navigation and sun background */
+.hero-section {
+    position: relative;
+    width: 100%;
 }
-nav{
-    padding-top: 1rem;
+
+/* Sun image is placed absolutely behind the nav */
+.sun {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
+
+/* Sun image size */
+.sun img {
+    width: 400px;
+    height: 300px;
+}
+
+/* Navigation bar styling */
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.4); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 24px;
+    padding: 0.5rem 1rem;
+}
+
+/* Unordered list styles */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navigation links styling */
 li a {
     text-decoration: none;
-    color:black; 
-    padding: 10px;
-   font-size:x-large;
-   font-family: 'Lato';
-   font-weight: 500;
-    
+    color: black;
+    font-family: 'Lato';
+    font-size: large;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    transition: background 0.3s;
 }
 
+/* Hover effect on nav links */
 li a:hover {
-    color: #007BFF; 
+    color: #007BFF;
+    background: rgba(255, 255, 255, 0.2);
 }
 
+/* Desert image container */
+.desert {
+    margin: 0;
+    padding: 0;
+}
 
+/* Desert image styling */
+.desert img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-
+/* Title 'insignia' styling */
+.title p {
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-family: 'Samarkan';
+    text-align: center;
+    font-size: 90px;
+}
