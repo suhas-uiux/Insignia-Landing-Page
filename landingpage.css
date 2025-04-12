@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*imade it private*/
 /* Header styling: Align logo, name, and dvh in a row */
 header {
     display: flex;
